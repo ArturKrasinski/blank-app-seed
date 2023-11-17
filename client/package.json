@@ -1,14 +1,6 @@
 {
   "name": "{{pkgName}}",
-  "description": "",
   "version": "{{applicationVersionWeb}}",
-  "private": true,
-  "license": "UNLICENSED",
-  "config": {
-    "API_HOST": "{{apiHost}}",
-    "PORT": 6060,
-    "ENABLE_SSO": {{enableSSO}}
-  },
   "genx": {
     "app": {
       "rootElement": "{{rootElement}}"
@@ -18,30 +10,6 @@
         "@genesislcap/foundation-zero"
       ]
     }
-  },
-  "scripts": {
-    "baseline": "npm run clean && npm run bootstrap",
-    "bootstrap": "npm install --no-fund --no-audit",
-    "bootstrap:ci": "npm ci --no-fund --no-audit",
-    "build": "genx build -e ENABLE_SSO",
-    "build:stats": "genx analyze",
-    "clean": "genx clean dist node_modules",
-    "dev": "genx dev -e API_HOST,ENABLE_SSO",
-    "dev:docker": "npm run dev -- --host 0.0.0.0",
-    "dev:intellij": "genx dev -e ENABLE_SSO",
-    "dev:no-open": "npm run dev -- --no-open",
-    "dev:https": "npm run dev -- --https",
-    "dev:webpack": "npm run dev -- -b webpack",
-    "dsconfig": "dsconfig --path src/styles/design-tokens.json",
-    "git:setup": "cd .. && npx --yes husky install",
-    "lint": "genx lint --profile",
-    "lint:fix": "genx lint --fix",
-    "lint:eslint": "genx lint -l eslint --profile",
-    "lint:stylelint": "genx lint -l stylelint",
-    "serve": "genx serve",
-    "test": "genx test",
-    "test:coverage": "genx test --coverage",
-    "test:unit:watch": "genx test --watch"
   },
   "husky": {
     "hooks": {
@@ -63,33 +31,53 @@
     "extends": "@genesislcap/stylelint-config"
   },
   "prettier": "@genesislcap/prettier-config",
-  "devDependencies": {
-    "@genesislcap/design-system-configurator": "{{versions.UI}}",
-    "@genesislcap/foundation-testing": "{{versions.UI}}",
-    "@genesislcap/genx": "{{versions.UI}}",
-    "husky": "^7.0.4",
-    "lint-prepush": "^2.2.1",
-    "lint-staged": "^12.4.1"
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "serve:ssr:client": "node dist/client/server/server.mjs"
   },
+  "private": true,
   "dependencies": {
-    "@genesislcap/foundation-comms": "{{versions.UI}}",
-    "@genesislcap/foundation-entity-management": "{{versions.UI}}",
-    "@genesislcap/foundation-forms": "{{versions.UI}}",
-    "@genesislcap/foundation-header": "{{versions.UI}}",
-    "@genesislcap/foundation-inbox": "{{versions.UI}}",
-    "@genesislcap/foundation-layout": "{{versions.UI}}",
-    "@genesislcap/foundation-login": "{{versions.UI}}",
-    "@genesislcap/foundation-ui": "{{versions.UI}}",
-    "@genesislcap/foundation-utils": "{{versions.UI}}",
-    "@genesislcap/foundation-zero": "{{versions.UI}}",
-    "@genesislcap/foundation-zero-grid-pro": "{{versions.UI}}",
-    "@genesislcap/g2plot-chart": "{{versions.UI}}",
-    "@microsoft/fast-components": "^2.21.6",
-    "@microsoft/fast-element": "^1.7.0",
-    "@microsoft/fast-foundation": "^2.33.4",
-    "@microsoft/fast-router": "^0.4.2",
-    "@microsoft/fast-web-utilities": "^5.1.0",
-    "rxjs": "^7.5.4",
-    "tslib": "^2.3.1"
+    "@angular/animations": "^17.0.0",
+    "@angular/common": "^17.0.0",
+    "@angular/compiler": "^17.0.0",
+    "@angular/core": "^17.0.0",
+    "@angular/forms": "^17.0.0",
+    "@angular/platform-browser": "^17.0.0",
+    "@angular/platform-browser-dynamic": "^17.0.0",
+    "@angular/platform-server": "^17.0.0",
+    "@angular/router": "^17.0.0",
+    "@angular/ssr": "^17.0.1",
+    "@genesislcap/foundation-auth": "14.107.0-auth-mf.27",
+    "@genesislcap/foundation-ui": "14.107.0-auth-mf.27",
+    "@genesislcap/foundation-zero": "14.107.0-auth-mf.27",
+    "express": "^4.18.2",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.2"
+  },
+  "devDependencies": {
+    "@angular-builders/custom-webpack": "^17.0.0",
+    "@angular-devkit/build-angular": "^17.0.1",
+    "@angular/cli": "^17.0.1",
+    "@angular/compiler-cli": "^17.0.0",
+    "@genesislcap/build-kit": "14.107.0-auth-mf.27",
+    "@types/express": "^4.17.17",
+    "@types/jasmine": "~5.1.0",
+    "@types/node": "^18.18.0",
+    "dotenv": "^16.3.1",
+    "file-loader": "^6.2.0",
+    "jasmine-core": "~5.1.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "style-loader": "^3.3.3",
+    "svg-url-loader": "^8.0.0",
+    "typescript": "~5.2.2"
   }
 }
