@@ -11,6 +11,7 @@ import { defaultLayout, loginLayout } from '../layouts';
 import { NotFound } from './not-found/not-found';
 import { Home } from './home/home';
 import { Dashboard } from './dashboard/dashboard';
+import { Admin } from './admin/admin';
 
 // eslint-disable-next-line
 declare var ENABLE_SSO: string;
@@ -18,12 +19,12 @@ declare var ENABLE_SSO: string;
 const ssoSettings =
   typeof ENABLE_SSO !== 'undefined' && ENABLE_SSO === 'true'
     ? {
-        autoAuth: true,
-        sso: {
-          toggled: true,
-          identityProvidersPath: 'sso/list',
-        },
-      }
+      autoAuth: true,
+      sso: {
+        toggled: true,
+        identityProvidersPath: 'sso/list',
+      },
+    }
     : {};
 
 export class MainRouterConfig extends FoundationRouterConfiguration<LoginSettings> {
@@ -94,6 +95,21 @@ export class MainRouterConfig extends FoundationRouterConfiguration<LoginSetting
         navItems: [
           {
             title: 'Dashboard',
+            icon: {
+              name: 'cog',
+              variant: 'solid',
+            },
+          },
+        ],
+      },
+      {
+        path: 'admin',
+        element: Admin,
+        title: 'Admin',
+        name: 'admin',
+        navItems: [
+          {
+            title: 'Admin',
             icon: {
               name: 'cog',
               variant: 'solid',

@@ -27,7 +27,6 @@ export const HomeTemplate = html<Home>`
     ],
   })}"
         ></foundation-form>
-        < /zero-layout-item> < /zero-layout-region> < /zero-layout>
       </zero-layout-item>
     </zero-layout-region>
   </zero-layout>
