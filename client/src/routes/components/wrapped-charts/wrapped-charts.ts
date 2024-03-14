@@ -9,8 +9,14 @@ import { template } from './wrapped-charts.template';
   styles,
 })
 export class WrappedCharts extends FoundationElement {
-  chartConfig = {
-    xField: 'INSTRUMENT_NAME',
-    yField: 'QUANTITY',
+chartConfig = {
+    padding: 'auto',
+    seriesField: 'series',
+    xField: 'groupBy',
+    yField: 'value',
+    xAxis: {
+      type: 'time',
+      tickCount: 10,
+    },
   };
 }
