@@ -12,30 +12,30 @@ export const DashboardTemplate = html<Dashboard>`
             ></grid-pro-genesis-datasource>
           </zero-grid-pro>
         </zero-layout-item>
-        <zero-layout-item title="All Trades Line">
-          <zero-g2plot-chart type="column" :config="${(x) => x.chartConfig}">
-            <chart-datasource
-              resourceName="ALL_TRADES"
-              server-fields="TRADE_DATETIME PRICE SIDE"
-            ></chart-datasource>
-          </zero-g2plot-chart>
-        </zero-layout-item>
-      </zero-layout-region>
-
-      <zero-layout-region>
-        <zero-layout-item title="All Trades Pie">
-          <zero-g2plot-chart type="pie" :config="${(x) => x.pieConfiguration}">
+        <zero-layout-item title="All Positions tile (line example)">
+          <zero-g2plot-chart type="line" :config="${(x) => x.tile1ChartConfig}">
             <chart-datasource
               resourceName="ALL_POSITIONS"
               server-fields="INSTRUMENT_NAME VALUE"
             ></chart-datasource>
           </zero-g2plot-chart>
         </zero-layout-item>
-        <zero-layout-item title="All trades bar">
-          <zero-g2plot-chart type="bar" :config="${(x) => x.chartConfig}">
+      </zero-layout-region>
+
+      <zero-layout-region>
+        <zero-layout-item title="All Trades tile (pie example)">
+          <zero-g2plot-chart type="pie" :config="${(x) => x.tile2ChartConfig}">
             <chart-datasource
-              resourceName="ALL_TRADES"
-              server-fields="TRADE_DATETIME PRICE SIDE"
+              resourceName="ALL_POSITIONS"
+              server-fields="INSTRUMENT_NAME VALUE"
+            ></chart-datasource>
+          </zero-g2plot-chart>
+        </zero-layout-item>
+        <zero-layout-item title="All positions tile (column example)">
+          <zero-g2plot-chart type="column" :config="${(x) => x.tile3ChartConfig}">
+            <chart-datasource
+              resourceName="ALL_POSITIONS"
+              server-fields="INSTRUMENT_ID VALUE"
             ></chart-datasource>
           </zero-g2plot-chart>
         </zero-layout-item>

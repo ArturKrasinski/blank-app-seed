@@ -25,7 +25,8 @@ module.exports = async (inquirer, prevAns = {}) => {
       type: 'input',
       message: 'API Host (with WebSocket prefix and suffix if any)',
       when: ({setApiHost}) => setApiHost,
-      default: prevAns.apiHost || 'ws://localhost/gwf/',
+      // just for preview purposes
+      default: prevAns.apiHost || 'wss://public-foundation.genesislab.global/gwf/',
       validate: websocketValidator,
     },
   ])

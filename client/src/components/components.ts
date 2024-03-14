@@ -13,6 +13,8 @@ import { zeroGridComponents } from '@genesislcap/foundation-zero-grid-pro';
 import { g2plotChartsComponents } from '@genesislcap/g2plot-chart';
 import { logger } from '../utils';
 
+export * from './charts';
+
 /**
  * Ensure tree shaking doesn't remove these.
  */
