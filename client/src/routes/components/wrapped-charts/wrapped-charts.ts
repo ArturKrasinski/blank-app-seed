@@ -10,7 +10,7 @@ import { template } from './wrapped-charts.template';
 })
 export class WrappedCharts extends FoundationElement {
   chartConfig = {
-    xField: 'SYMBOL',
-    yField: 'TRADING_VOLUME',
+    xField: 'INSTRUMENT_NAME',
+    yField: 'QUANTITY',
   };
 }

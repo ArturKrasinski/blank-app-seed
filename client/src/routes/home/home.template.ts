@@ -1,8 +1,5 @@
 import { html } from '@microsoft/fast-element';
-import { WrappedForms } from '../components/wrapped-forms/wrapped-forms';
 import type { Home } from './home';
-
-WrappedForms;
 
 export const HomeTemplate = html<Home>`
   <zero-layout>
@@ -17,7 +14,7 @@ export const HomeTemplate = html<Home>`
         ></entity-management>
       </zero-layout-item>
       <zero-layout-item title="two">
-        <wrapped-forms></wrapped-forms>
+        <foundation-form resourceName="EVENT_AMEND_USER"></foundation-form>
       </zero-layout-item>
     </zero-layout-region>
   </zero-layout>
