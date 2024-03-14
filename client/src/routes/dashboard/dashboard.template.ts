@@ -1,8 +1,5 @@
 import { html } from '@microsoft/fast-element';
-import { WrappedCharts } from '../components/wrapped-charts/wrapped-charts';
 import type { Dashboard } from './dashboard';
-
-WrappedCharts;
 
 export const DashboardTemplate = html<Dashboard>`
   <zero-layout>
@@ -13,7 +10,12 @@ export const DashboardTemplate = html<Dashboard>`
         </zero-grid-pro>
       </zero-layout-item>
       <zero-layout-item title="Charts Title">
-        <wrapped-charts></wrapped-charts>
+        <zero-g2plot-chart type="column" :config="${(x) => x.chartConfig}">
+          <chart-datasource
+            resourceName="ALL_TRADES"
+            server-fields="TRADE_DATETIME PRICE SIDE"
+          ></chart-datasource>
+        </zero-g2plot-chart>
       </zero-layout-item>
     </zero-layout-region>
   </zero-layout>

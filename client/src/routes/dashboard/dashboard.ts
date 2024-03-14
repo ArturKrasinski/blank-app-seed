@@ -11,4 +11,15 @@ export class Dashboard extends FASTElement {
   constructor() {
     super();
   }
+
+chartConfig = {
+    padding: 'auto',
+    seriesField: 'series',
+    xField: 'groupBy',
+    yField: 'value',
+    xAxis: {
+      type: 'time',
+      tickCount: 10,
+    },
+  };
 }

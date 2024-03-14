@@ -14,7 +14,20 @@ export const HomeTemplate = html<Home>`
         ></entity-management>
       </zero-layout-item>
       <zero-layout-item title="two">
-        <foundation-form resourceName="EVENT_AMEND_USER"></foundation-form>
+        <foundation-form
+          resourceName="EVENT_AMEND_USER"
+          :uischema="${(x) => ({
+    type: 'VerticalLayout',
+    elements: [
+      { type: 'Control', scope: '#/properties/USER_PROFILES' },
+      { type: 'Control', scope: '#/properties/ACCESS_TYPE' },
+      { type: 'Control', scope: '#/properties/USER_NAME' },
+      { type: 'Control', scope: '#/properties/USER_TYPE' },
+      { type: 'Control', scope: '#/properties/WEBSITE' },
+    ],
+  })}"
+        ></foundation-form>
+        < /zero-layout-item> < /zero-layout-region> < /zero-layout>
       </zero-layout-item>
     </zero-layout-region>
   </zero-layout>
