@@ -12,14 +12,14 @@ export class Dashboard extends FASTElement {
     super();
   }
 
-chartConfig = {
-    padding: 'auto',
-    seriesField: 'series',
+  chartConfig = {
     xField: 'groupBy',
     yField: 'value',
-    xAxis: {
-      type: 'time',
-      tickCount: 10,
-    },
+  };
+
+  pieConfiguration = {
+    radius: 0.75,
+    angleField: 'value',
+    colorField: 'groupBy',
   };
 }
