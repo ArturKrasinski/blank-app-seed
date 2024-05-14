@@ -1,4 +1,4 @@
-import { css } from '@microsoft/fast-element';
+import { css } from '@genesislcap/web-core';
 import { mixinCardTitle } from './typography';
 
 export const stylesCardHeading = css`

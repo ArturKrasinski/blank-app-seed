@@ -1,4 +1,4 @@
-import { customElement, FASTElement } from '@microsoft/fast-element';
+import { customElement, FASTElement } from '@genesislcap/web-core';
 import { HomeTemplate as template } from './home.template';
 import { HomeStyles as styles } from './home.styles';
 

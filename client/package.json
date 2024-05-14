@@ -84,11 +84,7 @@
     "@genesislcap/foundation-zero": "{{versions.UI}}",
     "@genesislcap/foundation-zero-grid-pro": "{{versions.UI}}",
     "@genesislcap/g2plot-chart": "{{versions.UI}}",
-    "@microsoft/fast-components": "^2.21.6",
-    "@microsoft/fast-element": "^1.7.0",
-    "@microsoft/fast-foundation": "^2.33.4",
-    "@microsoft/fast-router": "^0.4.2",
-    "@microsoft/fast-web-utilities": "^5.1.0",
+    "@genesislcap/web-core": "{{versions.UI}}",
     "rxjs": "^7.5.4",
     "tslib": "^2.3.1"
   }

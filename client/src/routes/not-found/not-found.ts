@@ -1,4 +1,4 @@
-import { customElement, FASTElement } from '@microsoft/fast-element';
+import { customElement, FASTElement } from '@genesislcap/web-core';
 import { NotFoundTemplate as template } from './not-found.template';
 import { NotFoundStyles as styles } from './not-found.styles';
 import { logger } from '../../utils';

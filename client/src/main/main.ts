@@ -1,9 +1,16 @@
 import { Connect, ConnectConfig, defaultConnectConfig } from '@genesislcap/foundation-comms';
 import { Navigation } from '@genesislcap/foundation-header';
-import { baseLayerLuminance, StandardLuminance } from '@microsoft/fast-components';
-import { FASTElement, customElement, observable, DOM } from '@microsoft/fast-element';
-import { Container, inject, Registration } from '@microsoft/fast-foundation';
-import { DefaultRouteRecognizer } from '@microsoft/fast-router';
+import { 
+  baseLayerLuminance, 
+  Container, 
+  customElement, 
+  DefaultRouteRecognizer, 
+  DOM, 
+  FASTElement,
+  inject, 
+  observable,
+  Registration,
+  StandardLuminance } from '@genesislcap/web-core';
 import { DynamicTemplate as template, LoadingTemplate, MainTemplate } from './main.template';
 import { MainStyles as styles } from './main.styles';
 import { MainRouterConfig } from '../routes';

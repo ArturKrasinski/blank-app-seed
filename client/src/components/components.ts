@@ -1,5 +1,5 @@
 import { EntityManagement } from '@genesislcap/foundation-entity-management';
-import { FASTRouter } from '@microsoft/fast-router';
+import { FASTRouter } from '@genesislcap/web-core';
 import { zeroGridComponents } from '@genesislcap/foundation-zero-grid-pro';
 import { g2plotChartsComponents } from '@genesislcap/g2plot-chart';
 import { logger } from '../utils';

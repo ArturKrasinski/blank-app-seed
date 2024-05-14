@@ -1,5 +1,4 @@
-import { css, html, repeat } from '@microsoft/fast-element';
-import { FASTElementLayout } from '@microsoft/fast-router';
+import { css, FASTElementLayout, html, repeat } from '@genesislcap/web-core';
 
 const baseLayoutCss = css`
   .container {

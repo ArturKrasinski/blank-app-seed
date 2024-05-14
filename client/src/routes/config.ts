@@ -10,9 +10,7 @@ import {
   LoginConfig,
   Settings as LoginSettings,
 } from '@genesislcap/foundation-login';
-import { Constructable } from '@microsoft/fast-element';
-import { Container, optional } from '@microsoft/fast-foundation';
-import { Route, RouterConfiguration } from '@microsoft/fast-router';
+import { Container, Constructable, optional, Route, RouterConfiguration } from '@genesislcap/web-core';
 import { defaultLayout, loginLayout } from '../layouts';
 import { Home } from './home/home';
 import { NotFound } from './not-found/not-found';
