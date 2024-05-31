@@ -1,20 +1,56 @@
 # Changelog
 
-## [3.11.0-prerelease.4](https://github.com/genesiscommunitysuccess/blank-app-seed/compare/v3.11.0-prerelease.3...v3.11.0-prerelease.4) (2024-05-28)
+## [3.12.1](https://github.com/genesiscommunitysuccess/blank-app-seed/compare/v3.12.0...v3.12.1) (2024-05-30)
 
 
 ### Bug Fixes
 
-* **rapid-design-system:** font fixed for snackbar [FUI-1948](https://github.com/genesiscommunitysuccess/blank-app-seed/issues/1948) (#235) 7dfae87, closes FUI-1489
+* automated dependency version update [skip-ci] [PSD-9](https://github.com/genesiscommunitysuccess/blank-app-seed/issues/9) (#246) ed746f4
 
-## [3.11.0-prerelease.3](https://github.com/genesiscommunitysuccess/blank-app-seed/compare/v3.11.0-prerelease.2...v3.11.0-prerelease.3) (2024-05-28)
+## [3.12.0](https://github.com/genesiscommunitysuccess/blank-app-seed/compare/v3.11.3...v3.12.0) (2024-05-30)
+
+
+### Features
+
+* upgrade to GSF 8.0.0 GENC-513 (#244) 73b250b
+
+## [3.11.3](https://github.com/genesiscommunitysuccess/blank-app-seed/compare/v3.11.2...v3.11.3) (2024-05-29)
 
 
 ### Bug Fixes
 
-* default background color for tab-panel [FUI-1489](https://github.com/genesiscommunitysuccess/blank-app-seed/issues/1489) (#232) 18ccfbb, closes PSD-9
+* fdc3 file to unix file endings and fix linting error GENC-292 (#242) 50471e0
+
+## [3.11.2](https://github.com/genesiscommunitysuccess/blank-app-seed/compare/v3.11.1...v3.11.2) (2024-05-29)
+
+
+### Bug Fixes
+
+* adding foundation-fdc3 - GENC-292 (#239) fb1676d
+
+## [3.11.1](https://github.com/genesiscommunitysuccess/blank-app-seed/compare/v3.11.0...v3.11.1) (2024-05-29)
+
+
+### Bug Fixes
+
+* various Rapid fixes [PSD-9](https://github.com/genesiscommunitysuccess/blank-app-seed/issues/9) (#238) 771f414
+
+## [3.11.0](https://github.com/genesiscommunitysuccess/blank-app-seed/compare/v3.10.8...v3.11.0) (2024-05-29)
+
+
+### Features
+
+* rapid design system and web-core [FUI-1948](https://github.com/genesiscommunitysuccess/blank-app-seed/issues/1948) (#234) 3646837
+
+## [3.10.8](https://github.com/genesiscommunitysuccess/blank-app-seed/compare/v3.10.7...v3.10.8) (2024-05-28)
+
+
+### Bug Fixes
+
+* Add USER_ATTRIBUTES record for admin user (GENC-0) (#236) f887543
 
 ## [3.10.7](https://github.com/genesiscommunitysuccess/blank-app-seed/compare/v3.10.6...v3.10.7) (2024-05-28)
+
 
 ### Bug Fixes
 
@@ -25,31 +61,7 @@
 
 ### Bug Fixes
 
-* ability to set position in search-bar - prerelease GENC-498 (#228) 1f3ba84
-
-## [3.11.0-prerelease.2](https://github.com/genesiscommunitysuccess/blank-app-seed/compare/v3.11.0-prerelease.1...v3.11.0-prerelease.2) (2024-05-23)
-
-## [3.11.0-prerelease.1](https://github.com/genesiscommunitysuccess/blank-app-seed/compare/v3.10.6-prerelease.2...v3.11.0-prerelease.1) (2024-05-23)
-
-
-### Features
-
-* rapid design system and web-core prelim [FUI-1948](https://github.com/genesiscommunitysuccess/blank-app-seed/issues/1948) (#210) 75f4d78
-
-## [3.10.6-prerelease.2](https://github.com/genesiscommunitysuccess/blank-app-seed/compare/v3.10.6-prerelease.1...v3.10.6-prerelease.2) (2024-05-23)
-
-
-### Bug Fixes
-
-* populate dist tag correctly GENC-511 (#224) a34021b
-
-## [3.10.6-prerelease.1](https://github.com/genesiscommunitysuccess/blank-app-seed/compare/v3.10.5...v3.10.6-prerelease.1) (2024-05-23)
-
-
-### Bug Fixes
-
-* build config update GENC-511 (#223) 3b55d54
-* remove reference to FAST GENC-511 (#222) f5adba4
+* ability to set position in search-bar GENC-498 (#227) 279093b, closes PSD-9
 
 ## [3.10.5](https://github.com/genesiscommunitysuccess/blank-app-seed/compare/v3.10.4...v3.10.5) (2024-05-22)
 
